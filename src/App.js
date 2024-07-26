@@ -5,7 +5,6 @@ import React, {useRef} from 'react'
 
 
 export default function App() {
-
   const curLetter = useRef([]);
   const inputs = [0, 1, 2, 3, 4];
 
@@ -22,42 +21,20 @@ export default function App() {
   }
 
   return (
-  <div className="App"><h1>Title</h1> 
-    {inputs.map((_, index) => (
-        <input
-          key={index}
-          className="letterInput"
-          ref={el => curLetter.current[index] = el}
-          maxLength={1}
-          onChange={(e) => handler(e, index)}
-          onKeyDown={(e) => handlerBackspace(e, index)}
-        />
-      ))}
-  </div>
-);
-}
-
-/*
-function App() {
-  return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="title">Title</h1> 
+      {inputs.map((_, index) => (
+          <input
+            key={index}
+            className="letterInput"
+            ref={el => curLetter.current[index] = el}
+            maxLength={1}
+            onChange={(e) => handler(e, index)}
+            onKeyDown={(e) => handlerBackspace(e, index)}
+          />
+        ))}
+      <br/>
+      <button className="inputButton"> hello</button>
     </div>
   );
 }
-
-export default App;
-*/
