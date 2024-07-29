@@ -3,20 +3,29 @@
 }
 
 .title {
-  font-size: 70px;
+  font-size: 60px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 20px;
-  font-family: "Papyrus";
+  font-family: "Arial";
 }
 
-.letterInput {
-  width: 50px;
-  height: 50px;
-  font-size: 45px;
+.foodInput {
+  font-size: 15px;
+  width: 100px;
+  height: 20px;
+  margin: 10px;
+}
+
+.groceryList {
+  list-style-type: none;
   text-align: center;
-  align-items: center;
-  margin-right: 5px;
+  position: relative;
+  width: 500px;
+  top: 100;
+  left: 1020;
+  right: 1020;
+
 }
 
 .inputButton {
